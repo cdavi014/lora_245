@@ -18,11 +18,11 @@ extern int header_len;				// Length of the header being used
 extern int * header_idxs;			// Location of where to interlace header chars in payload. Calculated at runtime in init_header()
 struct RF_Settings {					// Contains all the variables to store RF register settings
 	int crc;
-	int spreading_factor[3];
-	int signal_power[3];
-	int bitrate[3];
-	int scrambling[3];
-	int frequency[3];
+	int spreading_factor;
+	int signal_power;
+	int bitrate;
+	int scrambling;
+	int frequency;
 };
 
 void init_header();
